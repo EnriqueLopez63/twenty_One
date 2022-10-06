@@ -1,7 +1,11 @@
+import random
+
 Usrcoins = 10
 
+
+
 def usrName():
-    x=input("What is your name")
+    x=input("What is your name?")
     return(x)
 
 def greeting(y): 
@@ -10,25 +14,86 @@ def greeting(y):
     return (y)
 greeting(usrName())
 
+def randInt():
+    return random.randint(1 , 10)
+print(randInt())
+   
+
+   
 ############# Hit or Stand ###########
-function usrGame() {
+compTotal = 0
+choice = "y"
+usrTotal = 0
+while (choice == "y" ):
+    x = randInt()
+    usrTotal = x + usrTotal
+    if (usrTotal > 20):   # change score limit here #
+        print("you loose")
+        break
+        
 
-    var choice = "y"
-    var usrTotal = 0
-    while (choice == "y" ) {
-        var x = randInt()
-        usrTotal = x + usrTotal
-        if (usrTotal > 20) {    /* change score limit here*/
-            break
-        }
+    choice = input("You have " +str(usrTotal)+ " points. Would you like to hit? Please only type y or n.")
 
-        choice = prompt(`You have ${usrTotal} points. Would you like to hit? Please only type y or n.`)
+    while (choice != "y" and choice != "n"):
+        choice = input("You did not type y or n. You have " +str(usrTotal)+ " points. Would you like to hit? Please only type y or n.")
 
-        while (choice != "y" && choice != "n"){
-            choice = prompt(`You did not type y or n. You have ${usrTotal} points. Would you like to hit? Please only type y or n.`)
-        }
-    }
 
-    return usrTotal
+    ############# computer numbers ###########
 
-}
+    x = randInt()
+    compTotal = x + compTotal
+    print(compTotal)
+    if (compTotal > 20):    # change score limit here for the computer #
+        print("you win")
+        break
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ # COMPBUST =  True
