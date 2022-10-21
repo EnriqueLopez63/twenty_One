@@ -1,8 +1,7 @@
 import random
 
-Usrcoins = 10
 
-
+Usrcoins = 999
 
 def usrName():
     x=input("What is your name?")
@@ -13,6 +12,11 @@ def greeting(y):
     print(y)
     return (y)
 greeting(usrName())
+
+def coin():
+    input("How many coins do you want to bet?")
+    return()
+coin()
 
 def randInt():
     return random.randint(1 , 10)
@@ -33,7 +37,7 @@ while (choice == "y" ):
         
 
     choice = input("You have " +str(usrTotal)+ " points. Would you like to hit? Please only type y or n.")
-
+    
     while (choice != "y" and choice != "n"):
         choice = input("You did not type y or n. You have " +str(usrTotal)+ " points. Would you like to hit? Please only type y or n.")
 
@@ -46,54 +50,3 @@ while (choice == "y" ):
     if (compTotal > 20):    # change score limit here for the computer #
         print("you win")
         break
-
-
-
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- # COMPBUST =  True
